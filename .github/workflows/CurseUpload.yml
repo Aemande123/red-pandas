@@ -28,5 +28,5 @@ jobs:
           file_path: build/libs/redpandas-${{ steps.build.outputs.version }}.jar
           changelog: https://raw.githubusercontent.com/ProxyNeko/red-pandas/master/CHANGELOG.txt
           display_name: RedPandas ${{ steps.build.outputs.version }}
-          game_versions: minecraft-1-15:1.15.2,Java 8,Forge
+          game_versions: minecraft-1-14:1.14.4,Java 8,Forge
           release_type: beta
