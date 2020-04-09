@@ -1,6 +1,6 @@
 package io.github.proxyneko.redpandas.client;
 
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.platform.GlStateManager;
 import io.github.proxyneko.redpandas.RedPandas;
 import io.github.proxyneko.redpandas.common.entities.RedPandaEntity;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
@@ -19,11 +19,11 @@ public class RenderRedPanda extends LivingRenderer<RedPandaEntity, RedPandaModel
     }
 
     @Override
-    protected void preRenderCallback(RedPandaEntity entity, MatrixStack matrixStack, float partialTickTime) {
+    protected void preRenderCallback(RedPandaEntity entity, float partialTickTime) {
         if (this.entityModel.isChild) {
-            matrixStack.scale(0.65F, 0.65F, 0.65F);
+            GlStateManager.scaled(0.65F, 0.65F, 0.65F);
         } else {
-            matrixStack.scale(1.0F, 1.0F, 1.0F);
+            GlStateManager.scaled(1.0F, 1.0F, 1.0F);
         }
     }
 

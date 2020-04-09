@@ -11,3 +11,7 @@ Config for this is stored per world.
 
 - 1.0.0:
 Initial alpha release.
+
+1.14.4:
+- 1.0.2:
+Just a quick 1.14.4 port.

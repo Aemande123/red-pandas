@@ -14,6 +14,6 @@ public class Rendering {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
-        RenderingRegistry.registerEntityRenderingHandler(RedPandas.RED_PANDA_ENTITY, RenderRedPanda::new);
+        RenderingRegistry.registerEntityRenderingHandler(RedPandaEntity.class, RenderRedPanda::new);
     }
 }
